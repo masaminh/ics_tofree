@@ -6,7 +6,7 @@ import sys
 def update_transp(cal, transp):
     for ev in cal.walk():
         if ev.name == 'VEVENT':
-            ev['TRANSP'] = 'TRANSPARENT'
+            ev['TRANSP'] = transp
 
 
 def main():
